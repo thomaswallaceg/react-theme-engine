@@ -1,0 +1,9 @@
+@import '../stylesheets/colors.scss';
+
+:export {
+  title: $lanthorn-orange;
+  background: $dark-grey;
+  text: $whiteish-grey;
+  accent-light: $lighter-lanthorn-orange;
+  accent-dark: $darker-lanthorn-orange;
+}

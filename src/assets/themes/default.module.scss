@@ -1,0 +1,9 @@
+@import '../stylesheets/colors.scss';
+
+:export {
+  title: $light-blue;
+  background: white;
+  text: black;
+  accent-light: $lighter-blue;
+  accent-dark: $not-so-light-blue;
+}
