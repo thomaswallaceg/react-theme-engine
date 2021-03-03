@@ -16,7 +16,7 @@ const Home = () => {
     <div className={styles.container}>
       <div className={styles.column}>
         <h1 className={styles.title}>
-          Welcome! This is the homepage.
+          Welcome to the homepage!
         </h1>
         <h2 className={styles.subtitle}>
           First subtitle
