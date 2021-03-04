@@ -1,3 +1,4 @@
+import { Storage } from './storage-helper';
 import defaultTheme from 'assets/themes/default.module.scss';
 import darkTheme from 'assets/themes/dark.module.scss';
 
@@ -20,15 +21,15 @@ class ThemeProvider {
         ));
         document.documentElement.style.setProperty('background-color', theme.background || defaultTheme.background)
 
-        window.localStorage.setItem('pageTheme', themeName);
+        Storage.store('pageTheme', themeName);
     }
 
     static loadStartupTheme() {
-        this.loadTheme(window.localStorage.getItem('pageTheme') || THEMES.DEFAULT);
+        this.loadTheme(this.getCurrentTheme() || THEMES.DEFAULT);
     }
 
     static getCurrentTheme() {
-        return window.localStorage.getItem('pageTheme');
+        return Storage.retrieve('pageTheme');
     }
 }
 
