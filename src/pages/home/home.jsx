@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
-import { ThemeProvider, THEMES } from '../../assets/themes/themes';
+import { ThemeProvider, THEMES } from 'assets/themes/themes';
 import styles from './home.module.scss';
-import globalStyles from '../../assets/stylesheets/global-styles.module.scss';
 
 const Home = () => {
   const [darkMode, setDarkmode] = useState(false);

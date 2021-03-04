@@ -1,5 +1,5 @@
-import defaultTheme from './default.module.scss';
-import darkTheme from './dark.module.scss';
+import defaultTheme from 'assets/themes/default.module.scss';
+import darkTheme from 'assets/themes/dark.module.scss';
 
 const THEMES = {
     DEFAULT: 'default',
