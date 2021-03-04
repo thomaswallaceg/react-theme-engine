@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { ThemeProvider, THEMES } from 'assets/themes/themes';
+import { ThemeProvider, THEMES } from 'helpers/theme-provider';
 import styles from './home.module.scss';
 
 const Home = () => {
